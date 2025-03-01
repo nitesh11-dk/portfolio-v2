@@ -15,20 +15,7 @@ const WorkExperience = () => {
         <p className="head-text">My Work Experience </p>
 
         <div className="work-container">
-          <div className="work-canvas">
-            <Canvas>
-              <ambientLight intensity={7} />
-              {/* <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} /> */}
-              {/* <directionalLight position={[10, 10, 10]} intensity={1} /> */}
-              <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
-
-              <Suspense fallback={<CanvasLoader />}>
-                <Avatar  position-y={-3} scale={3} animationName={animationName} />
-              </Suspense>
-            </Canvas>
-          </div>
-
-          <div className="work-content flex items-center justify-center">
+        <div className="work-content flex items-center justify-center">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
               {workExperiences.map((item, index) => (
                 <div
@@ -56,6 +43,20 @@ const WorkExperience = () => {
               ))}
             </div>
           </div>
+          
+          <div className="work-canvas">
+            <Canvas>
+              <ambientLight intensity={7} />
+              {/* <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} /> */}
+              {/* <directionalLight position={[10, 10, 10]} intensity={1} /> */}
+              <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
+
+              <Suspense fallback={<CanvasLoader />}>
+                <Avatar  position-y={-3} scale={3} animationName={animationName} />
+              </Suspense>
+            </Canvas>
+          </div>
+
         </div>
       </div>
     </section>
