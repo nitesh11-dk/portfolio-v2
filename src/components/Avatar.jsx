@@ -27,6 +27,7 @@ export function Avatar({ animationName = 'idle', ...props }) {
        [idleAnimation[0], saluteAnimation[0], clappingAnimation[0], victoryAnimation[0]],
        group,
      );
+
   useEffect(() => {
     actions[animationName].reset().fadeIn(0.5).play();
     return () => actions[animationName].fadeOut(0.5);
