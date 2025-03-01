@@ -19,3 +19,5 @@ const Alert = ({ type, text }) => {
 };
 
 export default Alert;
+
+// npx gltfjsx public/models/avatar.glb -o  src/components/Avatar.jsx -r public 

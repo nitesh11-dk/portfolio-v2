@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
+
 import { FaReact, FaNodeJs, FaGithub, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiTypescript, SiJavascript, SiMongodb, SiGraphql, SiTailwindcss } from 'react-icons/si';
 import { AiFillStar } from 'react-icons/ai';
@@ -23,27 +25,28 @@ const SkillsShowcase = () => {
     { name: 'Git', icon: <FaGithub className="w-6 h-6" />, color: 'bg-orange-600' },
   ];
 
-  useEffect(() => {
-  
-    gsap.to(marqueeRef.current, {
-      xPercent: -100,
-      ease: "none",
-      duration: 12,
-      repeat: -1,
-      modifiers: {
-        xPercent: gsap.utils.unitize(x => parseFloat(x) % 100)
-      }
-    });
-      gsap.to(marqueeRef2.current, {
-          xPercent: 100,
-          ease: "none",
-          duration: 12,
-          repeat: -1,
-          modifiers: {
-            xPercent: gsap.utils.unitize(x => parseFloat(x) % 100)
-          }
-        }); 
-  }, []);
+     useGSAP(() => {
+      gsap.to(marqueeRef.current, {
+        xPercent: -100,
+        ease: "none",
+        duration: 12,
+        repeat: -1,
+        modifiers: {
+          xPercent: gsap.utils.unitize(x => parseFloat(x) % 100)
+        }
+      });
+        gsap.to(marqueeRef2.current, {
+            xPercent: 100,
+            ease: "none",
+            duration: 12,
+            repeat: -1,
+            modifiers: {
+              xPercent: gsap.utils.unitize(x => parseFloat(x) % 100)
+            }
+          }); 
+
+      }); 
+    
 
   return (
     <div className=" rounded-xl  text-white  flex flex-col gap-6  py-4 px-1">
@@ -87,6 +90,9 @@ const SkillsShowcase = () => {
           ))}
         </div>
       </div>
+
+
+      
 
     </div>
   );

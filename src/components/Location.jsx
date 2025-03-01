@@ -12,7 +12,7 @@ const Location = () => {
     },{ scope: container }); 
   
   return (
-    <div  className="hover:opacity-90  cursor-pointer relative h-80 w-80 overflow-hidden">
+    <div  className="opacity-50  cursor-pointer relative  w-80 overflow-hidden">
           <img 
             src="/map2.png" 
             alt="Map location" 
