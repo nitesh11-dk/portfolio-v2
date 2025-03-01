@@ -20,4 +20,6 @@ const App = () => {
   );
 };
 
+// TODO: avatar camera ka tarak dekhna chhaiye 
+
 export default App;
