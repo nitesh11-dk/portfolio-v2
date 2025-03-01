@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import Globe from 'react-globe.gl';
 import Button from '../components/Button.jsx';
 import Location from '../components/Location.jsx';
 import SkillsShowcase from '../components/SkillsShowcase.jsx'
 import Education from '../components/Education.jsx'
+import {skills} from '../constants/index.js'
+
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
@@ -16,12 +17,7 @@ const About = () => {
     }, 2000);
   };
 
-  const skills = [
-    { category: "Frontend", items: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"], color: "bg-gray-700" },
-    { category: "Backend", items: ["Node.js", "Express", "MongoDB"], color: "bg-black" },
-    { category: "Languages", items: ["JavaScript", "TypeScript", "Python", "SQL"], color: "bg-gray-800" },
-    { category: "Tools", items: ["Git", "Docker", "Linux"], color: "bg-brown-700" } // Tailwind doesn't have "brown", using a workaround
-  ];
+
 
 
   return (
@@ -68,8 +64,8 @@ const About = () => {
       <div className="flex flex-col  mt-2 ">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-wrap  gap-1 ">
-            <span className="text-white-800 font-medium my-1">{skill.category}:</span>
-            <div className=' ml-1 flex gap-2 items-center'>
+            <span className="text-white-800 font-medium  my-1">{skill.category}:</span>
+            <div className=' ml-1 flex gap-2 items-center flex-wrap'>
             {skill.items.map((item, idx) => (
               <p key={idx} className="bg-zinc-600 px-3  rounded-xl text-yellow-400">
                 {item}

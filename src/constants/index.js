@@ -252,3 +252,19 @@
       animation: 'salute',
     },
   ];
+
+ export  const Links =  {
+    whatsapp: "https://wa.me/+919403080767",
+    github: "https://github.com/nitesh11-dk", 
+    linkedin: "https://www.linkedin.com/in/nitesh-dk/",
+    discord: "https://discord.gg/yourdiscord"
+  }
+
+ export const skills = [
+    { category: "Frontend", items: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"], color: "bg-gray-700" },
+    { category: "Backend", items: ["Node.js", "Express", "MongoDB"], color: "bg-black" },
+    { category: "Languages", items: ["JavaScript", "TypeScript", "Python", "SQL"], color: "bg-gray-800" },
+    { category: "Tools", items: ["Git", "Docker", "Linux"], color: "bg-brown-700" }
+  ];
+
+  

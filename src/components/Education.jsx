@@ -15,7 +15,7 @@ const Education = () => {
     {
       institution: "Maharashtra Board (SSC/HSC)",
       degree: "SSC/HSC",
-      period: "2023",
+      period: "2011-2023",
       grade: "Grade: 82.40% / 79.50%",
       icon: <FaSchool className="w-8 h-8 text-blue-400" />
     }
@@ -34,7 +34,7 @@ const Education = () => {
                     {item.icon}
                   </div>
                   <div>
-                    <h3 className="text-lg font-normal text-white">{item.institution}</h3>
+                    <h3 className="sm:text-lg   font-normal text-white">{item.institution}</h3>
                     <p className="mt-1 text-sm text-purple-300">{item.degree}</p>
                     <div className="mt-2 flex items-center justify-between">
                       <span className="text-xs text-gray-400">{item.period}</span>

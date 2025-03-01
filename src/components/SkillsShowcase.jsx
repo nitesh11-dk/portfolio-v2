@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
-
 import { FaReact, FaNodeJs, FaGithub, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiTypescript, SiJavascript, SiMongodb, SiGraphql, SiTailwindcss } from 'react-icons/si';
 import { AiFillStar } from 'react-icons/ai';
@@ -11,18 +10,18 @@ const SkillsShowcase = () => {
   const marqueeRef2 = useRef(null);
   
   const skills = [
-    { name: 'React', icon: <FaReact className="w-6 h-6" />, color: 'bg-blue-500' },
-    { name: 'TypeScript', icon: <SiTypescript className="w-6 h-6" />, color: 'bg-blue-400' },
-    { name: 'JavaScript', icon: <SiJavascript className="w-6 h-6" />, color: 'bg-yellow-400' },
-    { name: 'HTML5', icon: <FaHtml5 className="w-6 h-6" />, color: 'bg-orange-500' },
-    { name: 'CSS', icon: <FaCss3Alt className="w-6 h-6" />, color: 'bg-blue-600' },
-    { name: 'Node.js', icon: <FaNodeJs className="w-6 h-6" />, color: 'bg-green-600' },
-    { name: 'React Native', icon: <FaReact className="w-6 h-6" />, color: 'bg-blue-500' },
-    { name: 'MongoDB', icon: <SiMongodb className="w-6 h-6" />, color: 'bg-green-500' },
-    { name: 'GraphQL', icon: <SiGraphql className="w-6 h-6" />, color: 'bg-pink-600' },
-    { name: 'GSAP', icon: <AiFillStar className="w-6 h-6" />, color: 'bg-purple-500' },
-    { name: 'Tailwind', icon: <SiTailwindcss className="w-6 h-6" />, color: 'bg-cyan-500' },
-    { name: 'Git', icon: <FaGithub className="w-6 h-6" />, color: 'bg-orange-600' },
+    { name: 'React', icon: <FaReact className="w-6 h-6" /> },
+    { name: 'TypeScript', icon: <SiTypescript className="w-6 h-6" /> },
+    { name: 'JavaScript', icon: <SiJavascript className="w-6 h-6" /> },
+    { name: 'HTML5', icon: <FaHtml5 className="w-6 h-6" /> },
+    { name: 'CSS', icon: <FaCss3Alt className="w-6 h-6" /> },
+    { name: 'Node.js', icon: <FaNodeJs className="w-6 h-6" /> },
+    { name: 'React Native', icon: <FaReact className="w-6 h-6" /> },
+    { name: 'MongoDB', icon: <SiMongodb className="w-6 h-6" /> },
+    { name: 'GraphQL', icon: <SiGraphql className="w-6 h-6" /> },
+    { name: 'GSAP', icon: <AiFillStar className="w-6 h-6" /> },
+    { name: 'Tailwind', icon: <SiTailwindcss className="w-6 h-6" /> },
+    { name: 'Git', icon: <FaGithub className="w-6 h-6" /> },
   ];
 
      useGSAP(() => {

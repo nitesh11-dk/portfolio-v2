@@ -26,10 +26,10 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: 'JavaScript Mastery',
+          to_name: 'Nitesh Kushwaha',
           from_email: form.email,
           to_email: 'niteshdk11@gmail.com',
-          message: form.message,
+          message: form.message,         
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
       )
@@ -71,11 +71,10 @@ const Contact = () => {
       <div className="relative min-h-screen flex items-center justify-center flex-col">
         <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-screen" />
 
-        <div className="contact-container">
-          <h3 className="head-text">Let's talk</h3>
+        <div className="contact-container p-2">
+          <h3 className="head-text">Let's talk!</h3>
           <p className="text-lg text-white-600 mt-3">
-            Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
-            life, I’m here to help.
+          Whether you need a brand-new website, a revamped digital presence, or a one-of-a-kind project brought to life, I’ve got you covered. Let’s create something remarkable together!
           </p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
@@ -88,7 +87,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., John Doe"
+                placeholder="ex., Akshay More"
               />
             </label>
 
@@ -101,7 +100,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., johndoe@gmail.com"
+                placeholder="ex., akshay11@gmail.com"
               />
             </label>
 
@@ -112,14 +111,14 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 required
-                rows={5}
+                rows={4}
                 className="field-input"
                 placeholder="Share your thoughts or inquiries..."
               />
             </label>
 
             <button className="field-btn" type="submit" disabled={loading}>
-              {loading ? 'Sending...' : 'Send Message'}
+              {loading ? 'Sending...' : 'Shoot a Message'}
 
               <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
             </button>

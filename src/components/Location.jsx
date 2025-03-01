@@ -8,11 +8,11 @@ const Location = () => {
 
     const container = useRef();
     useGSAP(() => {
-        gsap.to(container.current, { scale: 1.8,repeat:-1,duration:2.5,delay:0.2,opacity:0,ease: "expo.out"}); 
+        gsap.to(container.current, { scale: 1.8,repeat:-1,duration:2,delay:0.1,opacity:0,ease: "expo.out"}); 
     },{ scope: container }); 
   
   return (
-    <div  className="opacity-50  cursor-pointer relative  w-80 overflow-hidden">
+    <div  className="opacity-90  cursor-pointer relative  w-80 overflow-hidden">
           <img 
             src="/map2.png" 
             alt="Map location" 
