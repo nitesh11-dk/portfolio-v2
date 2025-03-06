@@ -44,7 +44,7 @@ const WorkExperience = () => {
             </div>
           </div>
           
-          <div className="work-canvas">
+          <div className="work-canvas hidden sm:flex">
             <Canvas>
               <ambientLight intensity={7} />
               {/* <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} /> */}
