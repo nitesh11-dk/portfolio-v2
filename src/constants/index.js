@@ -16,11 +16,16 @@
     },
     {
       id: 4,
+      name: 'Resume',
+      href: 'https://docs.google.com/document/d/10cKAHCgjNiR5whSMzY4jdODX75Q_ohwj/edit?usp=sharing&ouid=116174180718668317883&rtpof=true&sd=true',
+    },
+    {
+      id: 5,
       name: 'Projects',
       href: '#projects',
     },
     {
-      id: 5,
+      id: 6,
       name: 'Contact',
       href: '#contact',
     },
