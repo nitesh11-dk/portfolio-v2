@@ -43,9 +43,6 @@ const Education = () => {
                   </div>
                 </div>
               </div>
-              {index < educationData.length - 1 && (
-                <div className="h-1 w-full bg-gradient-to-r from-purple-500 via-blue-500 to-green-500"></div>
-              )}
             </div>
           ))}
          <div>

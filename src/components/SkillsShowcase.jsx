@@ -59,7 +59,7 @@ const SkillsShowcase = () => {
           {[...skills, ...skills].map((skill, index) => (
             <div 
               key={`skill1-${index}`} 
-              className="flex items-center  rounded-xl border border-gray-700 bg-gray-800 p-4"
+              className="flex items-center  rounded-xl border border-gray-700 bg-gray-900 p-4"
             >
               <div className={`mr-4 scale-125 text-[#6dc1fb]`}>
                 {skill.icon}
@@ -79,7 +79,7 @@ const SkillsShowcase = () => {
           {[...skills.reverse(), ...skills].map((skill, index) => (
             <div 
             key={`skill1-${index}`} 
-            className="flex items-center  rounded-xl border border-gray-700 bg-gray-800 p-4"
+            className="flex items-center  rounded-xl border border-gray-700 bg-gray-900 p-4"
           >
             <div className={`mr-4 scale-125 text-[#6dc1fb]`}>
               {skill.icon}

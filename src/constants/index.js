@@ -100,119 +100,83 @@
         },
       ],
     },
-    // {
-    //   title: 'CarePulse - Health Management System',
-    //   desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-    //   subdesc:
-    //     'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    //   href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    //   texture: '/textures/project/project3.mp4',
-    //   logo: '/assets/project-logo3.png',
-    //   logoStyle: {
-    //     backgroundColor: '#60f5a1',
-    //     background:
-    //       'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-    //     border: '0.2px solid rgba(208, 213, 221, 1)',
-    //     boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-    //   },
-    //   spotlight: '/assets/project-spotlight/spotlight3.png',
-    //   tags: [
-    //     {
-    //       id: 1,
-    //       name: 'React.js',
-    //       path: '/assets/react.svg',
-    //     },
-    //     {
-    //       id: 2,
-    //       name: 'TailwindCSS',
-    //       path: 'assets/tailwindcss.png',
-    //     },
-    //     {
-    //       id: 3,
-    //       name: 'TypeScript',
-    //       path: '/assets/typescript.png',
-    //     },
-    //     {
-    //       id: 4,
-    //       name: 'Framer Motion',
-    //       path: '/assets/framer.png',
-    //     },
-    //   ],
-    // },
-    // {
-    //   title: 'Horizon - Online Banking Platform',
-    //   desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-    //   subdesc:
-    //     'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    //   href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-    //   texture: '/textures/project/project4.mp4',
-    //   logo: '/assets/project-logo4.png',
-    //   logoStyle: {
-    //     backgroundColor: '#0E1F38',
-    //     border: '0.2px solid #0E2D58',
-    //     boxShadow: '0px 0px 60px 0px #2F67B64D',
-    //   },
-    //   spotlight: '/assets/project-spotlight/spotlight4.png',
-    //   tags: [
-    //     {
-    //       id: 1,
-    //       name: 'React.js',
-    //       path: '/assets/react.svg',
-    //     },
-    //     {
-    //       id: 2,
-    //       name: 'TailwindCSS',
-    //       path: 'assets/tailwindcss.png',
-    //     },
-    //     {
-    //       id: 3,
-    //       name: 'TypeScript',
-    //       path: '/assets/typescript.png',
-    //     },
-    //     {
-    //       id: 4,
-    //       name: 'Framer Motion',
-    //       path: '/assets/framer.png',
-    //     },
-    //   ],
-    // },
-    // {
-    //   title: 'Imaginify - AI Photo Manipulation App',
-    //   desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-    //   subdesc:
-    //     'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-    //   href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    //   texture: '/textures/project/project5.mp4',
-    //   logo: '/assets/project-logo5.png',
-    //   logoStyle: {
-    //     backgroundColor: '#1C1A43',
-    //     border: '0.2px solid #252262',
-    //     boxShadow: '0px 0px 60px 0px #635BFF4D',
-    //   },
-    //   spotlight: '/assets/project-spotlight/spotlight5.png',
-    //   tags: [
-    //     {
-    //       id: 1,
-    //       name: 'React.js',
-    //       path: '/assets/react.svg',
-    //     },
-    //     {
-    //       id: 2,
-    //       name: 'TailwindCSS',
-    //       path: 'assets/tailwindcss.png',
-    //     },
-    //     {
-    //       id: 3,
-    //       name: 'TypeScript',
-    //       path: '/assets/typescript.png',
-    //     },
-    //     {
-    //       id: 4,
-    //       name: 'Framer Motion',
-    //       path: '/assets/framer.png',
-    //     },
-    //   ],
-    // },
+    {
+      title: 'IntervuAI -AI Mock Interview Pro',
+      desc: 'IntervuAI is an AI-powered job interview preparation platform with interactive voice-assisted mock interviews. It simulates real interview scenarios, provides instant feedback, tracks progress, and improve their communication and interview skills effectively.',
+      subdesc:
+        'IntervuAI uses Next.js, ShadCN UI, and TypeScript for a modern, scalable frontend, with Firebase handling authentication and data storage. Vapi AI powers voice interviews, while Gemini AI generates questions and feedback, ensuring an intelligent and interactive experience.',
+      href: 'https://intervuai-mock.vercel.app/',
+      texture: '/textures/project/ai_interview.mp4',
+      logo: '/assets/project-logo/IntervuAI.ico',
+      logoStyle: {
+        backgroundColor: '#60f5a1',
+        background:
+          'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+        border: '0.2px solid rgba(208, 213, 221, 1)',
+        boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+      },
+      spotlight: '/assets/project-spotlight/spotlight3.png',
+      tags: [
+        {
+          id: 1,
+          name: 'Next.js',
+          path: '/assets/project-skills/nextjs.png',
+        },
+        {
+          id: 2,
+          name: 'TypeScript',
+          path: '/assets/project-skills/typescript.png',
+        },
+        {
+          id: 3,
+          name: 'Firebase',
+          path: '/assets/project-skills/firebase.png',
+        },
+        {
+          id: 4,
+          name: 'Vapi ',
+          path: '/assets/project-skills/vapi.png',
+        },
+      ],
+    },
+   {
+  "title": "ASPIRE AI - AI Career Boost Hub",
+  "desc": "ASPIRE AI is an AI-driven career hub that offers personalized job insights, AI-powered Quiz preparation, resume and cover letter generation, and trending skill analysis to help users advance in their careers.",
+  "subdesc": "Built with Next.js, ShadCN UI, and TypeScript for a seamless experience, ASPIRE AI leverages Clerk for authentication, Prisma ORM with PostgreSQL for data management, and Inngest for background task automation. Gemini AI powers intelligent job insights, resume building, and AI Quiz preparation .",
+  "href": "https://aspire-ai-delta.vercel.app/",
+  "texture": "/textures/project/career_hub.mp4",
+  "logo": "/assets/project-logo/aspire.jpg",
+  "logoStyle": {
+    "backgroundColor": "#60f5a1",
+    "background": "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+    "border": "0.2px solid rgba(208, 213, 221, 1)",
+    "boxShadow": "0px 0px 60px 0px rgba(35, 131, 96, 0.3)"
+  },
+  "spotlight": "/assets/project-spotlight/spotlight4.png",
+  "tags": [
+    {
+      "id": 1,
+      "name": "Next.js",
+      "path": "/assets/project-skills/nextjs.png"
+    },
+    {
+      "id": 2,
+      "name": "Clerk",
+      "path": "/assets/project-skills/clerk.png"
+    },
+    {
+      "id": 3,
+      "name": "Prisma",
+      "path": "/assets/project-skills/primsa.png"
+    },
+    {
+      "id": 4,
+      "name": "Gemini AI",
+      "path": "/assets/project-skills/gemini.jpg"
+    },
+  ]
+}
+
   ];
 
 
