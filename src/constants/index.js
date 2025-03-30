@@ -34,73 +34,6 @@
 
   export const myProjects = [
     {
-      title: "AlgoViz - Interactive Data Structures & Algorithms Visualizer",
-      desc: "AlgoViz is a web-based platform that visualizes data structures and algorithms through real-time animations. It helps users understand complex DSA concepts interactively.",
-      subdesc: "Built with React.js and Tailwind CSS, AlgoViz provides an intuitive interface to explore arrays, linked lists, trees, sorting, searching, and pathfinding algorithms with dynamic animations.",
-      href: 'https://algo-viz-seven.vercel.app/',
-      texture: '/textures/project/project-algoviz.mp4',
-      logo: '/assets/project-logo/logo-viz.png',
-      logoStyle: {
-        backgroundColor: '#2A1816',
-        border: '0.2px solid #36201D',
-        boxShadow: '0px 0px 60px 0px #AA3C304D',
-      },
-      spotlight: '/assets/project-spotlight/spotlight1.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/project-skills/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/project-skills/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'Javascript',
-          path: '/assets/project-skills/js.svg',
-        },
-      ],
-    },
-    {
-      title: "ElectroMart - E-Commerce Electronics Platform",
-  desc: "ElectroMart is a scalable e-commerce platform for electronics, built with a microservices architecture. It offers advanced product search, filtering, and secure transactions.",
-  subdesc: "Developed using the MERN Stack (MongoDB, Express.js, React.js, Node.js) with Vite and Tailwind CSS, ElectroMart ensures high performance and a seamless user experience. Integrated with Razorpay for secure payments, it features role-based access with admin control for managing products, orders, and users, while customers can browse, filter, and purchase electronics effortlessly.",
-      href: 'https://ecommerce-client-git-main-nitesh-dks-projects.vercel.app/',
-      texture: '/textures/project/electro-mart.mp4',
-      logo: '/assets/project-logo/logo-electro-mart.png',
-      logoStyle: {
-        backgroundColor: '#13202F',
-        border: '0.2px solid #17293E',
-        boxShadow: '0px 0px 60px 0px #2F6DB54D',
-      },
-      spotlight: '/assets/project-spotlight/spotlight2.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/project-skills/react.svg',
-        },
-        {
-          id: 2,
-          name: 'Express',
-          path: 'assets/project-skills/express.png',
-        },
-        {
-          id: 3,
-          name: 'MongoDB',
-          path: '/assets/project-skills/mongo.png',
-        },
-        {
-          id: 3,
-          name: 'RazorPay',
-          path: '/assets/project-skills/razorpay.webp',
-        },
-      ],
-    },
-    {
       title: 'IntervuAI -AI Mock Interview Pro',
       desc: 'IntervuAI is an AI-powered job interview preparation platform with interactive voice-assisted mock interviews. It simulates real interview scenarios, provides instant feedback, tracks progress, and improve their communication and interview skills effectively.',
       subdesc:
@@ -175,7 +108,112 @@
       "path": "/assets/project-skills/gemini.jpg"
     },
   ]
-}
+},
+{
+  "title": "AVP Landing Page - Dance Studio Website",
+  "desc": "AVP Landing Page is a visually engaging and modern website designed for a dance studio, showcasing classes, events, and instructors with a seamless user experience.",
+  "subdesc": "Built using React and Vite for fast performance, the AVP Landing Page is styled with Tailwind CSS and enhanced with Acertainty UI and ShadCN for a sleek and dynamic design. The site provides an immersive experience for dance enthusiasts, featuring smooth animations and an intuitive layout. A Contact Us form is integrated using EmailJS, allowing users to reach out easily via email.",
+  "href": "https://avp-landing-page.vercel.app/",
+  "texture": "/textures/project/avp-landing-page.mp4",
+  "logo": "/assets/project-logo/dance_avp.png",
+  "logoStyle": {
+    "backgroundColor": "#f5a160",
+    "background": "linear-gradient(0deg, #F5A16050, #F5A16050), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+    "border": "0.2px solid rgba(208, 213, 221, 1)",
+    "boxShadow": "0px 0px 60px 0px rgba(240, 128, 64, 0.3)"
+  },
+  spotlight: '/assets/project-spotlight/spotlight5.png',
+  tags: [
+    {
+      id: 1,
+      name: 'React.js',
+      path: '/assets/project-skills/react.svg',
+    },
+    {
+      id: 2,
+      name: 'TailwindCSS',
+      path: 'assets/project-skills/tailwindcss.png',
+    },
+    {
+      id: 3,
+      name: 'Javascript',
+      path: '/assets/project-skills/js.svg',
+    },
+    {
+      id: 4,
+      name: 'Vite',
+      path: '/assets/project-skills/vite.svg',
+    },
+  ],
+},
+{
+  title: "AlgoViz - Interactive Data Structures & Algorithms Visualizer",
+  desc: "AlgoViz is a web-based platform that visualizes data structures and algorithms through real-time animations. It helps users understand complex DSA concepts interactively.",
+  subdesc: "Built with React.js and Tailwind CSS, AlgoViz provides an intuitive interface to explore arrays, linked lists, trees, sorting, searching, and pathfinding algorithms with dynamic animations.",
+  href: 'https://algo-viz-seven.vercel.app/',
+  texture: '/textures/project/project-algoviz.mp4',
+  logo: '/assets/project-logo/logo-viz.png',
+  logoStyle: {
+    backgroundColor: '#2A1816',
+    border: '0.2px solid #36201D',
+    boxShadow: '0px 0px 60px 0px #AA3C304D',
+  },
+  spotlight: '/assets/project-spotlight/spotlight1.png',
+  tags: [
+    {
+      id: 1,
+      name: 'React.js',
+      path: '/assets/project-skills/react.svg',
+    },
+    {
+      id: 2,
+      name: 'TailwindCSS',
+      path: 'assets/project-skills/tailwindcss.png',
+    },
+    {
+      id: 3,
+      name: 'Javascript',
+      path: '/assets/project-skills/js.svg',
+    },
+  ],
+},
+{
+  title: "ElectroMart - E-Commerce Electronics Platform",
+desc: "ElectroMart is a scalable e-commerce platform for electronics, built with a microservices architecture. It offers advanced product search, filtering, and secure transactions.",
+subdesc: "Developed using the MERN Stack (MongoDB, Express.js, React.js, Node.js) with Vite and Tailwind CSS, ElectroMart ensures high performance and a seamless user experience. Integrated with Razorpay for secure payments, it features role-based access with admin control for managing products, orders, and users, while customers can browse, filter, and purchase electronics effortlessly.",
+  href: 'https://ecommerce-client-git-main-nitesh-dks-projects.vercel.app/',
+  texture: '/textures/project/electro-mart.mp4',
+  logo: '/assets/project-logo/logo-electro-mart.png',
+  logoStyle: {
+    backgroundColor: '#13202F',
+    border: '0.2px solid #17293E',
+    boxShadow: '0px 0px 60px 0px #2F6DB54D',
+  },
+  spotlight: '/assets/project-spotlight/spotlight2.png',
+  tags: [
+    {
+      id: 1,
+      name: 'React.js',
+      path: '/assets/project-skills/react.svg',
+    },
+    {
+      id: 2,
+      name: 'Express',
+      path: 'assets/project-skills/express.png',
+    },
+    {
+      id: 3,
+      name: 'MongoDB',
+      path: '/assets/project-skills/mongo.png',
+    },
+    {
+      id: 3,
+      name: 'RazorPay',
+      path: '/assets/project-skills/razorpay.webp',
+    },
+  ],
+},
+
 
   ];
 
