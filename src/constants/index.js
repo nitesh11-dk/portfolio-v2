@@ -17,7 +17,7 @@
     {
       id: 4,
       name: 'Resume',
-      href: 'https://docs.google.com/document/d/10cKAHCgjNiR5whSMzY4jdODX75Q_ohwj/edit?usp=sharing&ouid=116174180718668317883&rtpof=true&sd=true',
+      href: 'https://docs.google.com/document/d/1a-QwXxnBf3oRu81pyGQSqE2fcJX5BdTo/edit?usp=sharing&ouid=116174180718668317883&rtpof=true&sd=true',
     },
     {
       id: 5,
