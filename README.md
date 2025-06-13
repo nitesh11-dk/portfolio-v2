@@ -5,7 +5,7 @@
 **LinkedIn:** [linkedin.com/in/nitesh-dk](https://www.linkedin.com/in/nitesh-dk/)  
 **GitHub:** [github.com/nitesh11-dk](https://github.com/nitesh11-dk)  
 **WhatsApp:** [+91 9403080767](https://wa.me/+919403080767)  
-**Discord:** [yourdiscord](https://discord.com/users/1265330154172059648)
+**Discord:** [nittesh.dk](https://discord.com/users/1265330154172059648)
 
 ---
 
