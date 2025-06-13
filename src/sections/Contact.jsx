@@ -1,8 +1,9 @@
-import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 
 import useAlert from '../hooks/useAlert.js';
 import Alert from '../components/Alert.jsx';
+
+const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1383142894923284492/cA2FJM9gatYOHLFpuxzaplK5isDd8ghtSw_C8oZkP5MdC8jHTjMXVKZ7y6ZexjT62qFA";
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,52 +17,42 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: 'Nitesh Kushwaha',
-          from_email: form.email,
-          to_email: 'niteshdk11@gmail.com',
-          message: form.message,         
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
-      )
-      .then(
-        () => {
-          setLoading(false);
-          showAlert({
-            show: true,
-            text: 'Thank you for your message 😃',
-            type: 'success',
-          });
+    // Prepare the Discord message content
+    const content = `**New Portfolio Message**\n**Name:** ${form.name}\n**Email:** ${form.email}\n**Message:** ${form.message}`;
 
-          setTimeout(() => {
-            hideAlert(false);
-            setForm({
-              name: '',
-              email: '',
-              message: '',
-            });
-          }, [3000]);
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          showAlert({
-            show: true,
-            text: "I didn't receive your message 😢",
-            type: 'danger',
-          });
-        },
-      );
+    try {
+      const response = await fetch(DISCORD_WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ content }),
+      });
+      if (response.ok) {
+        setLoading(false);
+        showAlert({
+          show: true,
+          text: 'Thank you for your message 😃',
+          type: 'success',
+        });
+        setTimeout(() => {
+          hideAlert(false);
+          setForm({ name: '', email: '', message: '' });
+        }, 3000);
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      setLoading(false);
+      console.error(error);
+      showAlert({
+        show: true,
+        text: "I didn't receive your message 😢",
+        type: 'danger',
+      });
+    }
   };
 
   return (
@@ -74,7 +65,7 @@ const Contact = () => {
         <div className="contact-container p-2">
           <h3 className="head-text">Let's talk!</h3>
           <p className="text-lg text-white-600 mt-3">
-          Whether you need a brand-new website, a revamped digital presence, or a one-of-a-kind project brought to life, I’ve got you covered. Let’s create something remarkable together!
+          Whether you need a brand-new website, a revamped digital presence, or a one-of-a-kind project brought to life, I've got you covered. Let's create something remarkable together!
           </p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
