@@ -4,7 +4,7 @@ import { OrbitControls } from '@react-three/drei';
 
 import CanvasLoader from '../components/Loading.jsx';
 import { workExperiences } from '../constants/index.js';
-import {Avatar} from '../components/Avatar.jsx'
+import {Nitesh} from '../components/Nitesh.jsx'
 
 const WorkExperience = () => {
   const [animationName, setAnimationName] = useState('idle');
@@ -52,7 +52,7 @@ const WorkExperience = () => {
               <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
 
               <Suspense fallback={<CanvasLoader />}>
-                <Avatar  position-y={-3} scale={3} animationName={animationName} />
+                <Nitesh  position-y={-3} scale={3} animationName={animationName} />
               </Suspense>
             </Canvas>
           </div>

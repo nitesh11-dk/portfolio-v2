@@ -2,15 +2,14 @@ import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useMediaQuery } from 'react-responsive';
 import { PerspectiveCamera } from '@react-three/drei';
-
 import Button from '../components/Button.jsx';
 import CanvasLoader from '../components/Loading.jsx';
 import HeroCamera from '../components/HeroCamera.jsx';
-import { Cl } from '../components/cl.jsx';
+import {Room} from '../components/Room.jsx';
 
 const Hero = () => {
-  // Use media queries to determine screen size
   const isMobile = useMediaQuery({ maxWidth: 768 });
+
 
 
   return (
@@ -19,7 +18,7 @@ const Hero = () => {
         <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
           Hi, I am Nitesh <span className="waving-hand">👋</span>
         </p>
-        <p className="hero_tag text-gray_gradient">Building Brands, Developing Web</p>
+        <p className="hero_tag text-zinc-200">Building Brands, Developing Web</p>
       </div>
 
       <div className="w-full h-full absolute  inset-0">
@@ -27,11 +26,10 @@ const Hero = () => {
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 3, 18]}    />
             <HeroCamera isMobile={isMobile}>
-              <Cl scale={0.2}  />
-            </HeroCamera>
+              <Room scale={3.57} position={[1.6, 4.9, 7.6]}  />
+              </HeroCamera>
 
-
-            <ambientLight intensity={4} />
+            <ambientLight intensity={20} />
             <directionalLight position={[0, 7, 0]} intensity={4} />
           </Suspense>
         </Canvas>

@@ -147,6 +147,35 @@
   ],
 },
 {
+  title: 'Lorpy - npm Package for Local Dev Sharing',
+  desc: 'Lorpy is a CLI tool that makes sharing your local development server as easy as a single command, complete with QR code generation and secure access. Perfect for mobile testing, client demos, and webhook testing.',
+  subdesc:
+    'Built on top of localtunnel, Lorpy simplifies development collaboration by providing instant, secure tunnel URLs. It includes QR code generation for quick sharing, password protection using public IP, and supports API/webhook integration without auth prompts.',
+  href: 'https://www.npmjs.com/package/lorpy',
+  texture: '/textures/project/npm.mp4',
+  logo: '/assets/project-logo/npm.png',
+  logoStyle: {
+    backgroundColor: '#60f5a1',
+    background:
+      'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+    border: '0.2px solid rgba(208, 213, 221, 1)',
+    boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+  },
+  spotlight: '/assets/project-spotlight/spotlight3.png',
+  tags: [
+    {
+      id: 1,
+      name: 'Express',
+      path: 'assets/project-skills/express.png',
+    },
+    {
+      id: 2,
+      name: 'Javascript',
+      path: '/assets/project-skills/js.svg',
+    },
+  ],
+},
+{
   title: "AlgoViz - Interactive Data Structures & Algorithms Visualizer",
   desc: "AlgoViz is a web-based platform that visualizes data structures and algorithms through real-time animations. It helps users understand complex DSA concepts interactively.",
   subdesc: "Built with React.js and Tailwind CSS, AlgoViz provides an intuitive interface to explore arrays, linked lists, trees, sorting, searching, and pathfinding algorithms with dynamic animations.",

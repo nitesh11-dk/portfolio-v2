@@ -7,7 +7,7 @@ const HeroCamera = ({ isMobile, children }) => {
 
   useEffect(() => {
     if (group.current) {
-      group.current.rotation.set(isMobile ? 0.2 : 0.3, 0, 0);
+      group.current.rotation.set(isMobile ? 0.1 : 0.15, 0, 0);
     }
   }, []);
 
@@ -17,7 +17,11 @@ const HeroCamera = ({ isMobile, children }) => {
     if (!isMobile) {
       easing.dampE(
         group.current.rotation,
-        [-state.pointer.y / 5 + 0.3, state.pointer.x / 5, 0],
+        [
+          -state.pointer.y / 10 + 0.15,
+          state.pointer.x / 10,
+          0
+        ],
         0.25,
         delta
       );
